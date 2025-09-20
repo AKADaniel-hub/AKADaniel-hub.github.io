@@ -1,3 +1,11 @@
+table , th ,tr{
+    font-weight: normal;
+}
+
+#coluna{
+    font-weight: bold;
+}
+
 #paragrafo_localizacao {
     width: 32em;
 }
@@ -12,4 +20,25 @@
 .fotografias img{
     width: 150px;
     border-radius: 20px;
+}
+
+.poema p{
+ margin-bottom: 1px;
+margin-top: 1px;   
+}
+
+.poema p:nth-child(-n + 3){
+    color: green;
+
+}
+
+.poema p:nth-child(4){
+    color: gold;
+    font-weight: bold;
+
+}
+
+.poema p:nth-last-child(-n +4){
+    color: red;
+
 }
