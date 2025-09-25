@@ -1,10 +1,10 @@
-*{
+* {
   margin: 0px;
 }
 
 body {
-    background-color: whitesmoke;
-    position: relative;
+  background-color: whitesmoke;
+  position: relative;
 }
 
 #diw-img {
@@ -15,82 +15,240 @@ body {
 
 header {
 
-background: whitesmoke;
-position: sticky;
-z-index:1; 
-height: 10vh;
-top: 0;
+  display: flex;
+  flex-direction: row;
+
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  background: whitesmoke;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  height: 10vh;
+  top: 0;
+  padding: 0 2rem;
+}
+
+
+header nav ul {
+  list-style: none;
+  /* tira os bullets */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+header nav li {
+
+  display: inline-block;
+}
+
+header nav a {
+  text-decoration: none;
+  color: black;
 }
 
 
 section:nth-child(1) {
 
-  height: 100vh;
+  height: 90vh;
+  /*para emcaixar com o header*/
   background: whitesmoke;
-  background-image:  url("images/hero image.jpg");
-    background-size: cover;
-    
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+  background-image: url("images/hero-image.jpg");
+  background-size: cover;
 
-  
-}
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 
-
-.hero-text{
 
 
 }
+
+section:nth-child(1) div h2 {
+
+  color: white;
+
+  position: relative;
+  top: 50px;
+  left: 140px;
+
+}
+
+.hero-text a {
+
+  position: relative;
+  top: 43px;
+  left: 150px;
+
+  color: white;
+  /* tira o azul e a linha em baixo*/
+  text-decoration: none;
+
+}
+
+.hero-text a:hover {
+
+  color: whitesmoke;
+  /* tira o azul e a linha em baixo*/
+  text-decoration: none;
+  font-weight: bold;
+
+}
+
+
+
 
 section:nth-child(2) {
-
-
-
-height: 100vh;
-background: whitesmoke;
+  height: 100vh;
+  background: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* alinha vertical */
+  align-items: center;
+  /* alinha horizontal */
+  text-align: center;
 }
 
-.container-project-lab{
-    
+.container-project-lab ul {
+  display: flex;
+  flex-wrap: wrap;
+  /*  permite quebrar a linha */
+  justify-content: center;
+  /* centra mesmo quando quebra */
+  gap: 25px;
+  /* espaço entre as bolhas */
+  padding: 0;
+  margin: 30px 0 0 0;
+  /* para nao ficar em cima do texto */
+  list-style: none;
 }
 
-.projectos-lab{
-  
-display: flex;
-align-items: center;
-justify-content: center;
-padding: 10px;
+.projectos-lab {
+  background: grey;
+  border-radius: 50%;
+  /* faz a bolha ser redonda o width e height tb tem de ser iguais */
 
+  width: 120px;
+  /* bolhas menores em desktop */
+  height: 120px;
 
-  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  /* velocidade do scale() */
+}
+
+.projectos-lab a {
+  display: flex;
+  /* faz o link ocupar a bolha toda e centraliza */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* faz com que toda a bola seja clicavel */
+  height: 100%;
   color: white;
-  width: 20%;
-  padding: 15px;
-  border-radius: 1em;
-  box-sizing: border-box;
+  /* tira o azul e a linha em baixo */
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 50%;
+}
 
+.projectos-lab:hover {
+  background: darkgrey;
+  transform: scale(1.2);
+  /* faz ele "crescer" */
+}
 
+/* MEDIA QUERY para ecrãs ≥ 400px */
+@media (max-width: 601px) {
+
+  section:nth-child(2) h3 {
+    font-size: 2rem;
+    /* aumenta tamanho do titulo */
+  }
+
+  section:nth-child(2) p {
+    font-size: 1.2rem;
+    /* aumenta tamanho do paragrafo */
+  }
+
+  .projectos-lab a {
+    font-size: 1.6rem;
+    /* aumenta texto dentro das bolhas */
+  }
+
+  .container-project-lab ul {
+    flex-direction: column;
+    /* bolhas lado a lado */
+    gap: 20px;
+    /* reduz espaço entre bolhas em desktop */
+  }
+
+  .projectos-lab {
+
+    width: 180px;
+    /* tamanho grande para mobile */
+    height: 180px;
+  }
 }
 
 section:nth-child(3) {
- width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 80vh;
+  /*para emcaixar com o fotter*/
   background: whitesmoke;
 
-display: grid;
+  display: grid;
 
+  margin: 20px;
 
-grid-template-columns: 3fr 1fr;
-grid-template-areas: 
-'div div  img'
-;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas:
+    'div div  img'
+  ;
 
 }
 
+section:nth-child(3) a {
+
+  color: black;
+  /* tira o azul e a linha em baixo*/
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section:nth-child(3) a:hover {
+
+  color: indigo;
+  /*tenho de arranajr uma cor melhor i guess*/
+}
+
+
 footer {
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  text-align: center;
+
   height: 10vh;
+
   background: black;
+  color: white;
+}
+
+footer a {
+
+  text-decoration: none;
   color: white;
 }

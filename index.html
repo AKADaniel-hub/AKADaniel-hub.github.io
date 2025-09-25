@@ -5,12 +5,21 @@
     <meta charset="utf-8">
     <title>Primeira Página</title>
     <link rel="stylesheet" href="styles.css" />
+    <a id="inicio"></a> <!-- nao estava a dar da outra forma-->
 </head>
 
 <body>
 
     <header>
-        <h1>Primeira Página Web!</h1>
+        <h1>Lisbon</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#projectos">Projectos</a></li>
+                <li><a href="#cadeira">Cadeira</a></li>
+
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -18,18 +27,20 @@
         <section>
 
             <div>
+                <h2>Lisbon</h2>
+
                 <div class="hero-text">
                     <a href="lab1/index.html">
-                        minha cidade
+                        discover more about my city by clicking here
                     </a>
 
-                    <p>Eis a minha primeira página Web!</p>
                 </div>
             </div>
 
         </section>
 
-        <section>
+        <section id="projectos">
+
             <h3>Projectos / Labs</h3>
             <p>Alguns dos exercicios desenvolvidos ao longo da UC</p>
 
@@ -40,12 +51,13 @@
                         <li class="projectos-lab"><a href="lab1/index.html">Lab1</a></li>
                         <li class="projectos-lab"><a href="lab2/index.html">Lab2</a></li>
                         <li class="projectos-lab"><a href="lab3/index.html">Lab3</a></li>
+
                     </ul>
                 </div>
             </nav>
         </section>
 
-        <section>
+        <section id="cadeira">
 
             <div>
                 <p>
@@ -70,8 +82,8 @@
 
 
     <footer>
-        <p>Universidade Lusófona
-            2025</p>
+        <a target="_blank" href="https://www.ulusofona.pt/">Universidade Lusófona
+            2025</a>
 
     </footer>
 
