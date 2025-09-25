@@ -1,7 +1,96 @@
-body {
-    background-color: #b3b3b3;
+*{
+  margin: 0px;
 }
 
-img {
-    width: 300px;
+body {
+    background-color: whitesmoke;
+    position: relative;
+}
+
+#diw-img {
+  width: 300px;
+}
+
+
+
+header {
+
+background: whitesmoke;
+position: sticky;
+z-index:1; 
+height: 10vh;
+top: 0;
+}
+
+
+section:nth-child(1) {
+
+  height: 100vh;
+  background: whitesmoke;
+  background-image:  url("images/hero image.jpg");
+    background-size: cover;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+  
+}
+
+
+.hero-text{
+
+
+}
+
+section:nth-child(2) {
+
+
+
+height: 100vh;
+background: whitesmoke;
+}
+
+.container-project-lab{
+    
+}
+
+.projectos-lab{
+  
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 10px;
+
+
+  background: black;
+  color: white;
+  width: 20%;
+  padding: 15px;
+  border-radius: 1em;
+  box-sizing: border-box;
+
+
+}
+
+section:nth-child(3) {
+ width: 100vw;
+    height: 100vh;
+  background: whitesmoke;
+
+display: grid;
+
+
+grid-template-columns: 3fr 1fr;
+grid-template-areas: 
+'div div  img'
+;
+
+}
+
+footer {
+  height: 10vh;
+  background: black;
+  color: white;
 }
