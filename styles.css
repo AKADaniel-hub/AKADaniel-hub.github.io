@@ -1,3 +1,5 @@
+* { box-sizing: border-box; }
+
 * {
   margin: 0px;
 }
@@ -166,36 +168,41 @@ section:nth-child(2) {
   /* faz ele "crescer" */
 }
 
-/* MEDIA QUERY para ecrãs ≥ 400px */
+
 @media (max-width: 601px) {
 
+#diw-img {
+  width: 150px;
+}
+
+
   section:nth-child(2) h3 {
-    font-size: 2rem;
-    /* aumenta tamanho do titulo */
+    font-size: 1.4rem;
+    
   }
 
   section:nth-child(2) p {
-    font-size: 1.2rem;
-    /* aumenta tamanho do paragrafo */
+    font-size: 1rem;
+    
   }
 
   .projectos-lab a {
-    font-size: 1.6rem;
-    /* aumenta texto dentro das bolhas */
+    font-size: 1.3rem;
+    
   }
 
   .container-project-lab ul {
     flex-direction: column;
-    /* bolhas lado a lado */
+    
     gap: 20px;
-    /* reduz espaço entre bolhas em desktop */
+    
   }
 
   .projectos-lab {
 
-    width: 180px;
+    width: 150px;
     /* tamanho grande para mobile */
-    height: 180px;
+    height: 150px;
   }
 }
 
@@ -259,6 +266,8 @@ footer a {
   header {
     flex-direction: column;
 
+    position: unset;  /* tirar o sticky*/
+    
     height: auto;
 
     padding: 1rem;

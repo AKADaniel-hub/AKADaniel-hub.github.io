@@ -1,44 +1,262 @@
-table , th ,tr{
-    font-weight: normal;
+
+
+/*hiper link a nao irem para o sitio certo porcausa do stick header*/
+#fotografias, #video, #poema {
+  scroll-margin-top: 12vh;
 }
 
-#coluna{
-    font-weight: bold;
+body {
+  background-color: whitesmoke;
+}
+
+table,
+th,
+tr {
+  font-weight: normal;
+}
+
+#coluna {
+  font-weight: bold;
 }
 
 #paragrafo_localizacao {
-    width: 32em;
+  width: 32em;
 }
 
-.fotografias{
+
+header {
+
+  display: flex;
+  flex-direction: row;
+
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  background: whitesmoke;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  height: 10vh;
+  top: 0;
+  padding: 0 2rem;
+}
+
+
+header nav ul {
+  list-style: none;
+  /* tira os bullets */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+header nav li {
+
+  display: inline-block;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.multimedia {
+
+
+  display: flex;
+  flex-direction: row;
+
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  background: rgb(201, 201, 201);
+  
+  top: 0;
+  z-index: 1;
+  height: 5vh;
+  top: 0;
+  padding: 0 2rem;
+
+  margin: 30px;
+margin-bottom: 0px;
+margin-top: 0px;
+
+}
+
+
+.multimedia nav ul {
+  list-style: none;
+  /* tira os bullets */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.multimedia nav li {
+
+  display: inline-block;
+}
+
+.multimedia a {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+
+section:nth-of-type(1) {
+  position: relative;
+  justify-content: center;
+
+
+  align-items: center;
+  text-align: center;
+}
+
+
+
+section:nth-of-type(2) {
+  position: relative;
+  justify-content: center;
+
+
+  align-items: center;
+  text-align: center;
+}
+
+
+
+section:nth-of-type(3) {
+
+
+  position: relative;
+  justify-content: center;
+
+
+  align-items: center;
+  text-align: center;
+  margin: 0px;
+
+
+}
+
+h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+div.parallax:nth-child(1){
+
+  min-height: 30px;
+}
+
+div.parallax {
+  background-image: url(https://cdn.pixabay.com/photo/2024/01/07/10/56/belem-tower-8492812_1280.jpg);
+  min-height: 250px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.poema p {
+  margin-bottom: 1px;
+  margin-top: 1px;
+}
+
+.poema p:nth-child(-n + 3) {
+  color: green;
+
+}
+
+.poema p:nth-child(4) {
+  color: gold;
+  font-weight: bold;
+
+}
+
+.poema p:nth-last-child(-n +4) {
+  color: red;
+
+}
+
+
+
+
+.fotografias {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  justify-content: space-evenly;
+}
+
+.fotografias img {
+  width: 150px;
+  border-radius: 20px;
+
+}
+
+iframe {
+  width: 560px;
+  height: 315px;
+}
+
+
+/*funfa +--*/
+@media(max-width: 601px) {
+
+  .iframe-container {
+
     display: flex;
-    flex-direction: row ;
-    flex-wrap: wrap;
-    gap: 10px;
+    justify-content: center;
+    padding: 0px 30px;
+
+  }
+
+
+  iframe {
+    width: 100%;
+    max-width: 560px;
+    aspect-ratio: 16/9;
+    border: none;
+  }
 }
 
-.fotografias img{
-    width: 150px;
-    border-radius: 20px;
+footer {
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  text-align: center;
+
+
+  height: 10vh;
+
+  background: black;
+  color: white;
 }
 
-.poema p{
- margin-bottom: 1px;
-margin-top: 1px;   
-}
+footer a {
 
-.poema p:nth-child(-n + 3){
-    color: green;
-
-}
-
-.poema p:nth-child(4){
-    color: gold;
-    font-weight: bold;
-
-}
-
-.poema p:nth-last-child(-n +4){
-    color: red;
-
+  text-decoration: none;
+  color: white;
 }
