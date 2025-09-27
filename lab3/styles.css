@@ -19,9 +19,6 @@ tr {
   font-weight: bold;
 }
 
-#paragrafo_localizacao {
-  width: 32em;
-}
 
 
 header {
@@ -259,4 +256,47 @@ footer a {
 
   text-decoration: none;
   color: white;
+}
+
+.localizacao-h2{
+  position: relative;
+  justify-content: center;
+
+
+  align-items: center;
+  text-align: center;
+}
+
+.localizacao{
+  display: flex;
+  margin: 10px;
+
+}
+
+.paragrafo_localizacao {
+  width: 32em;
+  text-align: justify;
+}
+
+
+.localizacao iframe{
+  width: 95%;
+  max-width: 560px;
+  aspect-ratio: 16/9;
+  border: 0;
+ border-radius: 0.5rem;
+}
+
+@media (max-width: 601px) {
+  .localizacao{
+    flex-direction: column;
+  }
+
+  .localizacao iframe{
+    width: 100%;
+    max-width: none;
+ border-radius: 1rem;
+
+  }
+
 }
