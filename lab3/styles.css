@@ -20,6 +20,9 @@ tr {
 }
 
 
+.hamburguer {
+  display: none;
+}
 
 header {
 
@@ -41,6 +44,13 @@ header {
 }
 
 
+header h1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
 header nav ul {
   list-style: none;
   /* tira os bullets */
@@ -60,6 +70,62 @@ header a {
   color: black;
 }
 
+  header nav a {
+
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 2px 3px 3px lightgrey;
+
+  }
+  header nav a:hover{
+      filter: brightness(90%);
+  }
+
+
+@media (max-width: 601px) {
+
+
+  header,
+  nav {
+    top: 0;
+    flex-direction: column;
+    height: auto;
+
+  }
+
+
+  header:hover nav {
+    display: flex;
+  }
+
+  .hamburguer {
+    display: block;
+  }
+
+  .nav-header {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: whitesmoke;
+    padding: 1rem 0;
+  }
+
+  
+
+  header:hover nav {
+    display: flex;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
 
 .multimedia {
 
@@ -213,6 +279,7 @@ div.parallax {
 iframe {
   width: 560px;
   height: 315px;
+  
 }
 
 
@@ -278,6 +345,13 @@ footer a {
   text-align: justify;
 }
 
+.localizacao p{
+  flex: 1;
+}
+
+.mapa {
+  flex: 1;
+}
 
 .localizacao iframe {
   width: 95%;
@@ -357,7 +431,7 @@ footer a {
   max-width: 100%;
   border-radius: 10px;
   object-fit: cover;
-aspect-ratio: 16/9;  
+  aspect-ratio: 16/9;
 }
 
 .tabela-curiosidade {

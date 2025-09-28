@@ -35,6 +35,13 @@ header {
 }
 
 
+header h1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
 header nav ul {
   list-style: none;
   /* tira os bullets */
@@ -53,6 +60,69 @@ header a {
   text-decoration: none;
   color: black;
 }
+.hamburguer{
+  display: none;
+}
+
+  header nav a {
+
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 2px 3px 3px lightgrey;
+
+  }
+  header nav a:hover{
+      filter: brightness(90%);
+  }
+
+
+
+@media (max-width: 601px) {
+
+
+  header,
+  nav {
+    top: 0;
+    flex-direction: column;
+    height: auto;
+
+  }
+
+
+  header:hover nav {
+    display: flex;
+  }
+
+  .hamburguer {
+    display: block;
+  }
+
+  .nav-header {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: whitesmoke;
+    padding: 1rem 0;
+  }
+
+ 
+
+  
+  header:hover nav {
+    display: flex;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+
 
 section:nth-child(1) {
 
@@ -261,48 +331,3 @@ footer a {
 
 
 
-@media (max-width: 600px) {
-
-  header {
-    flex-direction: column;
-
-    position: unset;  /* tirar o sticky*/
-    
-    height: auto;
-
-    padding: 1rem;
-    align-items: center;
-  }
-
-  header nav ul {
-
-    flex-direction: column;
-
-    gap: 0.5rem;
-
-    width: 100%;
-
-    align-items: center;
-
-
-  }
-
-  header nav a {
-
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: white;
-    text-decoration: none;
-    color: black;
-    border-radius: 5px;
-    box-shadow: 2px 3px 3px lightgrey;
-
-  }
-
-header nav a:hover{
-
-  filter: brightness(90%)
-}
-
-
-}
