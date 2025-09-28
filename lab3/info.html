@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt">
-    <head>
-        <meta charset="UTF-8">
-        <title>Lisboa</title>
-        <link rel="stylesheet" href="styles.css" />
 
-    </head>
-    <body>
-         <header>
+<head>
+    <meta charset="UTF-8">
+    <title>Lisboa</title>
+    <link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body>
+    <header>
         <h1>Lisboa</h1>
         <nav>
             <ul>
@@ -20,98 +22,118 @@
 
 
     </header>
-        <main>
-            <h2>Informações</h2>
-            <p>Tabela de Informações da Cidade</p>
-
-            <table border="1">
-                
-
-                <thead>
-                    <tr>
-                        <th id="coluna" rowspan="2">Demografia</th>
-
-                        <th>População</th>
-                        <th>545 796 hab</th>
-                    </tr>
-
-                    <tr>
-                        <th>Densidade Populacional</th>
-                        <th>5 455,2 hab/km² </th>
-                    </tr>
-                </thead>
 
 
-                <tbody>
 
-                    <tr>
-                       <th id="coluna" rowspan="4">Geografia</th>
-                    </tr>
+    <main class="informacao">
+        <h2 class="info-h2">Informações</h2>
 
-                    <tr>
-                        <th>Area</th>
-                        <th>100.05km²</th>
-                    </tr>
+        <p class="info-p">Tabela de Informações da Cidade</p>
 
-                    <tr>
-                        <th>Região</th>
-                        <th>Lisboa</th>
-                    </tr>
-
-                    <tr>
-                        <th>Pais</th>
-                        <th>Portugal</th>
-                    </tr>
-
-                    <tr>
-                        <th id="coluna">Website</th>
-                        
-                        <th colspan="2">
-                            <a target="_blank" href="https://pt.wikipedia.org/wiki/Lisboa">wikipedia.org</a>
-                        </th>
-                    </tr>
-
-                </tbody>
-
-            </table>
-
-            <h3>Curiosidades sobre Lisboa</h1>
-
-    <table>
-        <thead>
-            <tr>
-                <th></th>
-                <th>Curiosidade</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>A Torre de Belém, um dos monumentos mais icônicos de Lisboa, foi originalmente construída para defender a cidade e o porto.</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Lisboa é a cidade mais ocidental da Europa continental, o que a torna um ponto estratégico entre o continente europeu e o resto do mundo.</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>O Elevador de Santa Justa, uma das principais atrações turísticas, foi projetado por um discípulo de Gustave Eiffel, o criador da Torre Eiffel em Paris.</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Lisboa tem o maior número de azulejos (cerâmicas decorativas) do mundo, sendo um símbolo cultural da cidade.</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>O bairro de Alfama, um dos mais antigos de Lisboa, é famoso pelas suas ruas estreitas e sinuosas, que remontam à época medieval.</td>
-            </tr>
-        </tbody>
-    </table>
+        <div class="info-img">
+            <img src="https://cdn.pixabay.com/photo/2015/12/06/15/17/portugal-1079586_1280.jpg" alt="" pixabay.com>
+        </div>
+        
+        <table class="tabela-informacao" border="1">
 
 
-        </main>
-        <footer>
-            <p>DIW 2025</p>
-        </footer>
-    </body>
+            <thead>
+                <tr>
+                    <th id="coluna" rowspan="2">Demografia</th>
+
+                    <th>População</th>
+                    <th>545 796 hab</th>
+                </tr>
+
+                <tr>
+                    <th>Densidade Populacional</th>
+                    <th>5 455,2 hab/km² </th>
+                </tr>
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+                    <th id="coluna" rowspan="4">Geografia</th>
+                </tr>
+
+                <tr>
+                    <th>Area</th>
+                    <th>100.05km²</th>
+                </tr>
+
+                <tr>
+                    <th>Região</th>
+                    <th>Lisboa</th>
+                </tr>
+
+                <tr>
+                    <th>Pais</th>
+                    <th>Portugal</th>
+                </tr>
+
+                <tr>
+                    <th id="coluna">Website</th>
+
+                    <th colspan="2">
+                        <a target="_blank" href="https://pt.wikipedia.org/wiki/Lisboa">wikipedia.org</a>
+                    </th>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+        <h3 class="info-h3">Curiosidades sobre Lisboa</h3>
+
+
+        <div class="info-curiosidades-imgs">
+            <img src="https://cdn.pixabay.com/photo/2015/09/06/18/50/lisbon-927669_1280.jpg" alt="pixabay.com">
+            <img src="https://cdn.pixabay.com/photo/2018/09/06/18/34/lisbon-3658942_1280.jpg" alt="pixabay.com">
+        </div>
+
+        <table class="tabela-curiosidade">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Curiosidade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>A Torre de Belém, um dos monumentos mais icônicos de Lisboa, foi originalmente construída
+                        para defender a cidade e o porto.</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Lisboa é a cidade mais ocidental da Europa continental, o que a torna um ponto estratégico
+                        entre o continente europeu e o resto do mundo.</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>O Elevador de Santa Justa, uma das principais atrações turísticas, foi projetado por um
+                        discípulo de Gustave Eiffel, o criador da Torre Eiffel em Paris.</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Lisboa tem o maior número de azulejos (cerâmicas decorativas) do mundo, sendo um símbolo
+                        cultural da cidade.</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>O bairro de Alfama, um dos mais antigos de Lisboa, é famoso pelas suas ruas estreitas e
+                        sinuosas, que remontam à época medieval.</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </main>
+    <footer>
+        <p>DIW 2025</p>
+    </footer>
+</body>
+
 </html>

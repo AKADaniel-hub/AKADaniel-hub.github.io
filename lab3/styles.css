@@ -1,7 +1,7 @@
-
-
 /*hiper link a nao irem para o sitio certo porcausa do stick header*/
-#fotografias, #video, #poema {
+#fotografias,
+#video,
+#poema {
   scroll-margin-top: 12vh;
 }
 
@@ -73,7 +73,7 @@ header a {
   align-items: center;
 
   background: rgb(201, 201, 201);
-  
+
   top: 0;
   z-index: 1;
   height: 5vh;
@@ -81,8 +81,8 @@ header a {
   padding: 0 2rem;
 
   margin: 30px;
-margin-bottom: 0px;
-margin-top: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
 
 }
 
@@ -155,7 +155,7 @@ body {
   padding: 0;
 }
 
-div.parallax:nth-child(1){
+div.parallax:nth-child(1) {
 
   min-height: 30px;
 }
@@ -258,7 +258,7 @@ footer a {
   color: white;
 }
 
-.localizacao-h2{
+.localizacao-h2 {
   position: relative;
   justify-content: center;
 
@@ -267,7 +267,7 @@ footer a {
   text-align: center;
 }
 
-.localizacao{
+.localizacao {
   display: flex;
   margin: 10px;
 
@@ -279,24 +279,108 @@ footer a {
 }
 
 
-.localizacao iframe{
+.localizacao iframe {
   width: 95%;
   max-width: 560px;
   aspect-ratio: 16/9;
   border: 0;
- border-radius: 0.5rem;
+  border-radius: 0.5rem;
 }
 
 @media (max-width: 601px) {
-  .localizacao{
+  .localizacao {
     flex-direction: column;
   }
 
-  .localizacao iframe{
+  .localizacao iframe {
     width: 100%;
     max-width: none;
- border-radius: 1rem;
+    border-radius: 1rem;
 
   }
 
+}
+
+
+
+
+.informacao {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-areas:
+    "h2 h2"
+    "p p"
+    "img-main tabela-informacao"
+    "h3 h3"
+    "img-curios tabela-curiosidade"
+    "img-curios tabela-curiosidade";
+  gap: 20px;
+  margin: 20px;
+}
+
+.info-h2 {
+  grid-area: h2;
+}
+
+.info-p {
+  grid-area: p;
+}
+
+.info-img {
+  grid-area: img-main;
+}
+
+.info-img img {
+  max-width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+.tabela-informacao {
+  grid-area: tabela-informacao;
+  align-self: start;
+}
+
+.info-h3 {
+  grid-area: h3;
+}
+
+.info-curiosidades-imgs {
+  grid-area: img-curios;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.info-curiosidades-imgs img {
+  max-width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+aspect-ratio: 16/9;  
+}
+
+.tabela-curiosidade {
+  grid-area: tabela-curiosidade;
+}
+
+/* responsive: empilhar no mobile */
+@media (max-width: 601px) {
+  .informacao {
+    grid-template-columns: 1fr;
+
+    grid-template-areas:
+      "h2"
+      "p"
+      "img-main"
+      "tabela-informacao"
+      "h3"
+      "img-curios"
+      "tabela-curiosidade";
+  }
+
+  .info-curiosidades-imgs img {
+    width: 100%;
+    max-width: 300px;
+  }
 }
