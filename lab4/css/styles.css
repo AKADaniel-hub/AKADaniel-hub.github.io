@@ -1,0 +1,60 @@
+
+header {
+
+  display: flex;
+  flex-direction: row;
+
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  background: whitesmoke;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  height: 10vh;
+  top: 0;
+  padding: 0 2rem;
+}
+
+
+header h1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+
+section {
+  height: 80vh;
+  /*para emcaixar com o fotter*/
+  background: whitesmoke;
+
+
+
+}
+
+
+footer {
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  text-align: center;
+
+
+  height: 10vh;
+
+  background: black;
+  color: white;
+}
+
+footer a {
+
+  text-decoration: none;
+  color: white;
+}
