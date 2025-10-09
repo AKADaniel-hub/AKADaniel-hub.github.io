@@ -1,0 +1,35 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#idPinta {
+
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#idEscreve {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+main {
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: antiquewhite;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+
+    background-color: azure;
+    padding: 10px;
+    border-radius: 5px;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+</head>
+
+<body>
+    <main>
+
+        <section id="idPassa">
+
+            <p>1. Passa por aqui!</p>
+
+            <script>
+                /* onclick, onmouseover, onmouseout, onkeyup, onkeydown, onchange, ... */
+
+                // A. Variaveis 
+                const frase = document.querySelector("#idPassa p");
+
+                // B. Event Handlers
+                function mudarFrase(modo) {
+
+                    if (modo) {
+
+                        frase.textContent = "1. Obrigado por passares!!"
+                    } else {
+
+                        frase.textContent = "1. Passa Por aqui!"
+                    }
+
+
+                }
+
+
+                //C. Event Listener
+                frase.onmouseover = () => { mudarFrase(1) };
+                frase.onmouseout = () => { mudarFrase(0) };
+
+
+            </script>
+
+        </section>
+
+
+        <section id="idPinta">
+
+            <p>2. Pinta-me!</p>
+
+            <button>Red</button>
+            <button>Green</button>
+            <button>Blue</button>
+
+
+
+            <script>
+                // A. variaveis
+                const buttonRed = document.querySelector("#idPinta button:nth-child(2)");
+                const buttonGreen = document.querySelector("#idPinta button:nth-child(3)");
+                const buttonBlue = document.querySelector("#idPinta button:nth-child(4)");
+
+                const paragrafo = document.querySelector("#idPinta p");
+
+                // B. Event handler
+                function mudarCor(cor) {
+                    paragrafo.style.color = cor;
+
+                }
+
+                // C. Event Listeners
+                buttonRed.onclick = () => mudarCor('Red');
+                buttonGreen.onclick = () => mudarCor('Green');
+                buttonBlue.addEventListener('click', () => mudarCor('Blue'))
+
+            </script>
+
+
+        </section>
+
+
+
+        <section id="idEscreve">
+
+            <label for="input">3. Experimenta escrever...</label>
+            <input id="input" type="text">
+
+        </section>
+
+        <script>
+            // A. Variaveis
+            const input = document.querySelector("#idEscreve input")
+
+            // B. Event handler
+            const cores = ['red', 'green', 'blue']
+            let i = 0
+            function colorir() {
+                input.style.backgroundColor = cores[i]
+                i = ++i % 3;
+            }
+
+            // C. Event listener
+            input.onkeyup = colorir
+        </script>
+
+
+        <section id="#idEscolhe">
+
+            <label for="input2">4. Excolhe uma cor em inglês:</label>
+            <input id="input2" type="text">
+            <button>submeter</button>
+
+            <script>
+                // A. Variaveis                    
+                const input = document.querySelector("#idEscolhe input")
+                const button = document.querySelector("#idEscolhe button")
+
+                // B. Event handler
+                function trocarCor() {
+
+                    document.querySelector("body").style.backgroundColor = input.value;
+
+                }
+
+
+                // C. Event listener
+                button.onclick = trocarCor;
+
+            </script>
+
+        </section>
+
+
+    </main>
+</body>
+
+</html>
