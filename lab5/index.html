@@ -135,6 +135,70 @@
         </section>
 
 
+        <section>
+            <button id="buttonConta">Conta!</button>
+            <span id="contador">0</span>
+
+            <script>
+
+                const btnConta = document.getElementById('buttonConta');
+                const contador = document.getElementById('contador');
+                let contagem = 0;
+
+                btnConta.onclick = function () {
+                    contagem = contagem + 1;
+                    contador.textContent = contagem;
+                };
+
+            </script>
+        </section>
+
+        <section id="idForm">
+
+            <form id="form">
+                <input id="nome" type="text" placeholder="Insira o seu nome">
+                <input id="idade" type="text" placeholder="Insira a sua idade">
+                <input type="submit" value="Submit">
+            </form>
+            <p id="mensagem"></p>
+
+            <script>
+                const formulario = document.getElementById('form');
+                const mensagem = document.getElementById('mensagem');
+
+                formulario.onsubmit = (e) => {
+                    e.preventDefault();
+
+                    const nome = document.getElementById('nome').value;
+                    const idade = document.getElementById('idade').value;
+
+                    mensagem.textContent = 'Olá, o ' + nome + ' tem ' + idade + '!';
+                };
+
+            </script>
+
+        </section>
+
+
+        <section>
+            <span id="contadorAuto">0</span>
+
+
+
+            <script>
+
+                const contadorAutomatico = document.getElementById('contadorAuto');
+                let contagemAutomatica = 0;
+
+                function count() {
+                    // code here
+                    contagemAutomatica = contagemAutomatica + 1;
+                    contadorAutomatico.textContent = contagemAutomatica;
+                }
+                setInterval(count, 1000);
+            </script>
+        </section>
+
     </main>
 </body>
 
