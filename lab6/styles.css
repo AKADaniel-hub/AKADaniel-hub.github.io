@@ -1,0 +1,242 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+
+    display: flex;
+    flex-direction: row;
+
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background: whitesmoke;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 10vh;
+    top: 0;
+    padding: 0 2rem;
+}
+
+
+header h1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header nav ul {
+    list-style: none;
+    /* tira os bullets */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+header nav li {
+
+    display: inline-block;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+.hamburguer {
+    display: none;
+}
+
+header nav a {
+
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 2px 3px 3px lightgrey;
+
+}
+
+header nav a:hover {
+    filter: brightness(90%);
+}
+
+
+
+@media (max-width: 601px) {
+
+
+
+
+    header,
+    nav {
+        top: 0;
+        flex-direction: column;
+        height: auto;
+
+    }
+
+
+    header:hover nav {
+        display: flex;
+    }
+
+    .hamburguer {
+        display: block;
+    }
+
+    .nav-header {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: whitesmoke;
+        padding: 1rem 0;
+    }
+
+
+
+
+    header:hover nav {
+        display: flex;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+}
+
+#produtos {
+
+    display: grid;
+    background-color: lavenderblush;
+
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 30px;
+
+
+}
+
+#produtos article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+
+}
+
+
+
+article h4 {
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 1.2em;
+
+}
+
+article h5 {
+    margin: 10px 0;
+    color: green;
+    font-size: 1em;
+}
+
+article p {
+    margin: 20px 0;
+    text-align: center;
+
+}
+
+
+article button {
+    background-color: lightblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+#produtos-h2 {
+    display: flex;
+    background-color: lavenderblush;
+    justify-content: center;
+    height: 10vh;
+
+}
+
+
+
+#produtosEscolhidos {
+    display: flex;
+    background-color: cornsilk;
+    justify-content: center;
+    height: 10vh;
+}
+
+#precoTotal {
+    display: flex;
+    background-color: cornsilk;
+    justify-content: center;
+    height: 10vh;
+}
+
+
+
+
+#cesto {
+
+    display: grid;
+    background-color: cornsilk;
+
+    grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    padding: 30px;
+}
+
+#cesto article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+
+}
+
+
+
+
+
+footer {
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    text-align: center;
+
+    height: 10vh;
+
+    background: black;
+    color: white;
+}
+
+footer a {
+
+    text-decoration: none;
+    color: white;
+}
