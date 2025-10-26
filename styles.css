@@ -1,4 +1,7 @@
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+  
+}
 
 * {
   margin: 0px;
@@ -7,6 +10,7 @@
 body {
   background-color: whitesmoke;
   position: relative;
+  overflow-x: hidden;
 }
 
 #diw-img {
@@ -60,24 +64,26 @@ header a {
   text-decoration: none;
   color: black;
 }
-.hamburguer{
+
+.hamburguer {
   display: none;
 }
 
-  header nav a {
+header nav a {
 
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: white;
-    text-decoration: none;
-    color: black;
-    border-radius: 5px;
-    box-shadow: 2px 3px 3px lightgrey;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
+  box-shadow: 2px 3px 3px lightgrey;
 
-  }
-  header nav a:hover{
-      filter: brightness(90%);
-  }
+}
+
+header nav a:hover {
+  filter: brightness(90%);
+}
 
 
 
@@ -109,9 +115,9 @@ header a {
     padding: 1rem 0;
   }
 
- 
 
-  
+
+
   header:hover nav {
     display: flex;
   }
@@ -241,38 +247,38 @@ section:nth-child(2) {
 
 @media (max-width: 601px) {
 
-#diw-img {
-  width: 150px;
-}
+  #diw-img {
+    width: 150px;
+  }
 
 
   section:nth-child(2) h3 {
     font-size: 1.4rem;
-    
+
   }
 
   section:nth-child(2) p {
     font-size: 1rem;
-    
+
   }
 
   .projectos-lab a {
     font-size: 1.3rem;
-    
+
   }
 
   .container-project-lab ul {
-    flex-direction: column;
-    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    
+
   }
 
   .projectos-lab {
 
-    width: 150px;
+    width: 100px;
     /* tamanho grande para mobile */
-    height: 150px;
+    height: 100px;
   }
 }
 
@@ -328,6 +334,3 @@ footer a {
   text-decoration: none;
   color: white;
 }
-
-
-
