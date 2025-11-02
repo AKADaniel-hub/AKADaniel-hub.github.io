@@ -4,12 +4,13 @@
     box-sizing: border-box;
 }
 
-#produtos-h2 , #cesto {
-  scroll-margin-top: 20vh;
+#produtos-h2,
+#cesto {
+    scroll-margin-top: 20vh;
 
 }
 
-body{
+body {
     overflow-x: hidden;
 }
 
@@ -178,6 +179,28 @@ article button {
     margin-bottom: 10px;
 }
 
+#img-header{
+    height: 40px;
+    width: auto;    
+}
+
+
+#filtros{
+    display: flex;
+    background-color: lavenderblush;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+#filtros select{
+    background-color: lavenderblush;
+    color: black;
+    border-radius: 5px;
+    border: 2px solid transparent;
+}
+
+
 #produtos-h2 {
     display: flex;
     background-color: lavenderblush;
@@ -199,7 +222,7 @@ article button {
     display: flex;
     background-color: cornsilk;
     justify-content: center;
-    height: 10vh;
+    height: 5vh;
 }
 
 
@@ -210,8 +233,8 @@ article button {
     background-color: cornsilk;
 
     grid-template-columns: 1fr 1fr 1fr;
-        gap: 30px;
-    padding: 30px;
+    gap: 30px;
+    padding: 10px;
 }
 
 #cesto article {
@@ -224,9 +247,36 @@ article button {
 }
 
 
+
+#zona-compra {
+    background-color: cornsilk;
+    display: grid;
+    justify-items: center;
+    gap: 5px;
+}
+
+
+#comprar-button {
+    background-color: lightgreen;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+#mensagem-compra{
+      background-color: cornsilk;
+    display: grid;
+    justify-items: center;
+    gap: 5px;
+}
+
+
 @media (max-width: 600px) {
 
-    #produtos, #cesto {
+    #produtos,
+    #cesto {
         grid-template-columns: 1fr;
     }
 

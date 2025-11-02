@@ -12,7 +12,7 @@
 <body>
 
     <header>
-        <h1><span>Loja Deisi</span> <span class="hamburguer">&#9776;</span></h1>
+        <h1><span><img id="img-header" src="deisi.png" alt="desi"></span> <span class="hamburguer">&#9776;</span></h1>
 
         <nav class="nav-header">
             <ul>
@@ -25,7 +25,26 @@
 
 
     <main>
+        <section id="filtros">
 
+            <label for="filtro">Filtrar</label>
+            <select name="filtro" id="filtro">
+                <option value="todas-as-categorias">Todas as Categorias</option>
+
+
+            </select>
+
+            <label for="ordenar">Ordenar</label>
+            <select name="ordenar" id="ordenar">
+                <option value="ordenar-preco">Ordenar Pelo Preço</option>
+                <option value="preco-crescente">Preço Crescente</option>
+                <option value="preco-decrescente">Preço Decrescente</option>
+            </select>
+
+            <label for="procurar">Procurar</label>
+            <input type="text" id="procurar" name="procurar" />
+
+        </section>
         <h2 id="produtos-h2">Produtos</h2>
 
         <section id="produtos">
@@ -42,6 +61,29 @@
 
         <h3 id="precoTotal">Preço Total: 0€</h3>
 
+        <section id="zona-compra">
+
+            <div class="opcao-checkout">
+                <label>
+                    És estudante do DEISI?
+                    <input type="checkbox" id="estudante-checkbox">
+                </label>
+            </div>
+
+            <div class="opcao-checkout">
+                <label>
+                    Código de desconto:
+                    <input type="text" id="codigo-desconto">
+                </label>
+            </div>
+
+            <button id="comprar-button">Comprar</button>
+
+        </section>
+        <section id="mensagem-compra">
+
+
+        </section>
     </main>
 
 
@@ -50,7 +92,6 @@
         <a target="_blank" href="https://deisi.ulusofona.pt/">Loja Deisi</a>
     </footer>
 
-    <script type="module" src="produtos.js"></script>
     <script type="module" src="main.js"></script>
 
 </body>
