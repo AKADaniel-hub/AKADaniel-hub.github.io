@@ -146,7 +146,7 @@ function criarProduto(produto) {
 
 
     const fraseRating = document.createElement("p");
-    const estrelas = "⭐".repeat(Math.floor(produto.rating.rate));
+    const estrelas = "✮".repeat(Math.floor(produto.rating.rate));
     fraseRating.textContent = `${estrelas} ${produto.rating.rate}  (${produto.rating.count} avaliações)`;
 
     const button = document.createElement('button');
