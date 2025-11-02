@@ -144,6 +144,11 @@ function criarProduto(produto) {
     preco.textContent = `Preço:  ${produto.price} €`;
 
 
+
+    const fraseRating = document.createElement("p");
+    const estrelas = "⭐".repeat(Math.floor(produto.rating.rate));
+    fraseRating.textContent = `${estrelas} ${produto.rating.rate}  (${produto.rating.count} avaliações)`;
+
     const button = document.createElement('button');
     button.textContent = 'Adicionar ao cesto';
 
@@ -159,7 +164,7 @@ function criarProduto(produto) {
     });
 
 
-    artigo.append(titulo, ssectionImage, preco, descricao, button);
+    artigo.append(titulo, ssectionImage, preco, fraseRating, descricao, button);
 
     return artigo;
 
